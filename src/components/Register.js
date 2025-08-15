@@ -22,7 +22,7 @@ function Register() {
     console.log("🔄 Sending registration request...", formData)
 
     try {
-      const res = await fetch("https://timer-backend-hxxq.onrender.com/api/auth/register", {
+      const res = await fetch("https://timer-backend1.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
