@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import "./TaskPage.css"
 import { useNavigate } from "react-router-dom"
 
-const API_BASE_URL = "https://timer-backend-hxxq.onrender.com"
+const API_BASE_URL = "https://timer-backend1.onrender.com"
 
 export default function TaskManager() {
   const [tasks, setTasks] = useState([])
