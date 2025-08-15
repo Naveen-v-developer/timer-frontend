@@ -30,7 +30,7 @@ const SessionChart = () => {
       try {
         setLoading(true)
         const token = localStorage.getItem("token")
-        const res = await axios.get("https://timer-backend-hxxq.onrender.com/api/session/history", {
+        const res = await axios.get("https://timer-backend1.onrender.com/api/session/history", {
           headers: { Authorization: `Bearer ${token}` },
         })
 
