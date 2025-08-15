@@ -22,7 +22,7 @@ function Login() {
     console.log("🔄 Sending login request...", formData)
 
     try {
-      const res = await fetch("https://timer-backend-hxxq.onrender.com/api/auth/login", {
+      const res = await fetch("https://timer-backend1.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
