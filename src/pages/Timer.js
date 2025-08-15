@@ -68,7 +68,7 @@ const Timer = () => {
     setLoadingTask(true)
     const token = localStorage.getItem("token")
     try {
-      const res = await fetch("https://timer-backend-hxxq.onrender.com/api/tasks/next", {
+      const res = await fetch("https://timer-backend1.onrender.com/api/tasks/next", {
         headers: { Authorization: `Bearer ${token}` },
       })
       const data = await res.json()
@@ -281,7 +281,7 @@ const Timer = () => {
               onClick={async () => {
                 const token = localStorage.getItem("token")
                 try {
-                  const res = await fetch(`https://timer-backend-hxxq.onrender.com/api/tasks/${nextTask._id}/complete`, {
+                  const res = await fetch(`https://timer-backend1.onrender.com/api/tasks/${nextTask._id}/complete`, {
                     method: "PATCH",
                     headers: {
                       "Content-Type": "application/json",
