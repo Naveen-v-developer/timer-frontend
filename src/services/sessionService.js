@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://timer-backend-hxxq.onrender.com";
+const API_BASE_URL = "https://timer-backend1.onrender.com";
 
 export const handleStartSession = async ({
   play,
