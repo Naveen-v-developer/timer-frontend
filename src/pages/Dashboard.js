@@ -29,7 +29,7 @@ const Dashboard = () => {
   const fetchTodayStats = async () => {
     try {
       const token = localStorage.getItem("token")
-      const res = await fetch("https://timer-backend-hxxq.onrender.com/api/session/today-stats", {
+      const res = await fetch("https://timer-backend1.onrender.com/api/session/today-stats", {
         headers: { Authorization: `Bearer ${token}` },
       })
       if (res.ok) {
@@ -44,7 +44,7 @@ const Dashboard = () => {
   const handleLogout = async () => {
     const token = localStorage.getItem("token")
     try {
-      await fetch("https://timer-backend-hxxq.onrender.com/api/session/end", {
+      await fetch("https://timer-backend1.onrender.com/api/session/end", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
